@@ -28,5 +28,10 @@ namespace SistemaAluguelBikes
                 lblErro.Text = "Usuário ou senha inválidos.";
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

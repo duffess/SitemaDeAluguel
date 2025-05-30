@@ -11,5 +11,10 @@
         public void MarcarComoAlugada() => Status = "Alugada";
 
         public void MarcarComoDisponivel() => Status = "Disponível";
+
+        public override string ToString()
+        {
+            return $"{Modelo} (ID: {IdBicicleta})";
+        }
     }
 }

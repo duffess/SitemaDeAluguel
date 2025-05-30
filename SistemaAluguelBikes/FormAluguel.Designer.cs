@@ -47,19 +47,19 @@
             this.chkBicicletas.FormattingEnabled = true;
             this.chkBicicletas.Location = new System.Drawing.Point(327, 86);
             this.chkBicicletas.Name = "chkBicicletas";
-            this.chkBicicletas.Size = new System.Drawing.Size(180, 34);
+            this.chkBicicletas.Size = new System.Drawing.Size(180, 274);
             this.chkBicicletas.TabIndex = 1;
             // 
             // dtpInicio
             // 
-            this.dtpInicio.Location = new System.Drawing.Point(329, 140);
+            this.dtpInicio.Location = new System.Drawing.Point(330, 363);
             this.dtpInicio.Name = "dtpInicio";
             this.dtpInicio.Size = new System.Drawing.Size(177, 20);
             this.dtpInicio.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(330, 184);
+            this.button1.Location = new System.Drawing.Point(327, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 40);
             this.button1.TabIndex = 3;

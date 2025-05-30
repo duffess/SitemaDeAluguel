@@ -14,5 +14,10 @@ namespace ProjetoAluguelBicicletas.Models
         {
             Alugueis.Add(aluguel);
         }
+
+        public override string ToString()
+        {
+            return Nome;  
+        }
     }
 }

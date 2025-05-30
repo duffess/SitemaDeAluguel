@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using ProjetoAluguelBicicletas.Models;
+using SistemaAluguelBikes.DAO;
 
 namespace SistemaAluguelBikes
 {
@@ -16,16 +17,30 @@ namespace SistemaAluguelBikes
 
         private void CarregarClientes()
         {
-            // Simulação
-            cmbCliente.Items.Add(new Cliente { IdCliente = 1, Nome = "João Silva" });
-            cmbCliente.Items.Add(new Cliente { IdCliente = 2, Nome = "Ana Souza" });
+            ClienteDAO clienteDAO = new ClienteDAO();
+            List<Cliente> clientes = clienteDAO.ListarClientes();
+
+            cmbCliente.Items.Clear();
+
+            foreach (var cliente in clientes)
+            {
+                cmbCliente.Items.Add(cliente);
+            }
+
+
         }
 
         private void CarregarBicicletasDisponiveis()
         {
-            // Simulação
-            chkBicicletas.Items.Add(new Bicicleta { IdBicicleta = 101, Modelo = "Caloi Aro 26" });
-            chkBicicletas.Items.Add(new Bicicleta { IdBicicleta = 102, Modelo = "Monark Aro 29" });
+            BicicletaDAO bicicletaDAO = new BicicletaDAO();
+            List<Bicicleta> bicicletas = bicicletaDAO.ListarBicicletasDisponiveis();
+
+            chkBicicletas.Items.Clear();
+
+            foreach (var bike in bicicletas)
+            {
+                chkBicicletas.Items.Add(bike);
+            }
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
